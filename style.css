@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: lightskyblue;
+
+}
+.nav{
+    background-color: rgb(9, 139, 231);
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.game{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+    border: 0.5px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.box:hover{
+    background-color: lightskyblue;
+}
+h1{
+    font-size: 3vw;
+    padding: 0 130px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(9, 139, 231);
+
+}
+.imgbox img{
+    width: 0;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+} 
+.boxtext{
+    color:rgb(9, 139, 231) ;
+}
+.butybtn{
+    background-color: lightskyblue;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 130px;
+    padding: 6px 14px;
+    cursor: pointer;    
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.butybtn:hover{
+    background-color: rgb(9, 139, 231);
+}
+.info{
+    font-size: 3vw;
+    padding: 0 130px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(9, 139, 231);
+    
+}
+@media screen and (max-width: 1000px) {
+    .game{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .container{
+        size: 20vw;
+    }
+
+} 
